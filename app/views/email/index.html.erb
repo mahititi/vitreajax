@@ -1,2 +1,7 @@
 <h1>Email#index</h1>
 <p>Find me in app/views/email/index.html.erb</p>
+<%= form_for :subscribe, html: { id: 'sub_form' } do |f| %>
+  <input type="email" name="email" placeholder="Your email address" id="sub_email">
+  <button class="btn btn-success" type="submit" id="sub_btn">Subscribe</button><br>
+  <p id="sub_output" class="lead" style="color: white;"></p>
+<% end %>
